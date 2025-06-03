@@ -26,6 +26,15 @@
     -->
     <title>React App</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1V5MT35VD2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1V5MT35VD2');
+</script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,5 +49,62 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+      <!-- 🍪 Cookie Banner -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ccc;
+  padding: 1rem;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+">
+  Ce site utilise des cookies pour Google Analytics. <br />
+  <button id="accept-cookies" style="
+    margin-top: 8px;
+    padding: 6px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  ">
+    Accepter
+  </button>
+</div>
+<script>
+  const banner = document.getElementById('cookie-banner');
+  const button = document.getElementById('accept-cookies');
+
+  const consent = localStorage.getItem('cookies-consent');
+
+  if (!consent) {
+    banner.style.display = 'block';
+  } else {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-1V5MT35VD2');
+  }
+
+  button?.addEventListener('click', () => {
+    localStorage.setItem('cookies-consent', true);
+    banner.style.display = 'none';
+
+    // Initialise Google Analytics après consentement
+    const gaScript = document.createElement('script');
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+    gaScript.async = true;
+    document.head.appendChild(gaScript);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-1V5MT35VD2');
+  });
+</script>
   </body>
 </html>

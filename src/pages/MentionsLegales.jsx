@@ -24,18 +24,20 @@ function MentionsLegales() {
 
       <h2>Collecte des données</h2>
       <p>
-        Aucune donnée personnelle n’est collectée à votre insu.
+        Aucune donnée personnelle n’est collectée à votre insu. Les données collectées par Google Analytics sont anonymisées et utilisées uniquement à des fins statistiques.
       </p>
 
       <h2>Cookies</h2>
       <p>
-        Ce site ne dépose pas de cookies à des fins publicitaires. Si des cookies sont utilisés à l’avenir, une information claire sera fournie.
+        Ce site utilise des cookies de mesure d’audience (Google Analytics), uniquement après acceptation par l’utilisateur via une bannière de consentement. Aucune donnée publicitaire n’est collectée.
       </p>
 
       <h2>Droit d'accès, de modification et de suppression</h2>
       <p>
-        Conformément au RGPD, vous pouvez demander l’accès, la rectification ou la suppression de vos données en écrivant à : <a href="mailto:cabinfivalence81@gmail.com">cabinfivalence81@gmail.com</a>
+        Conformément au Règlement Général sur la Protection des Données (RGPD), vous pouvez demander l’accès, la rectification ou la suppression de vos données en écrivant à :
+        <a href="mailto:cabinfivalence81@gmail.com">cabinfivalence81@gmail.com</a>
       </p>
+
     </div>
   );
 }
