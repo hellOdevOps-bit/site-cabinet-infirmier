@@ -20,6 +20,7 @@ function Header() {
         <Link to="/equipe" onClick={() => setIsOpen(false)}>Équipe</Link>
         <Link to="/missions" onClick={() => setIsOpen(false)}>Missions</Link>
         <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+        <Link to="/liensutiles" onClick={() => setIsOpen(false)}>Liens Utiles</Link>
       </nav>
     </header>
   );

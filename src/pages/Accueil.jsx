@@ -5,11 +5,11 @@ function Accueil() {
     return (
       <div style={{ padding: '1rem' }}>
         <MeteoWidget/>
-        <h1>Bienvenue sur le site de notre cabinet infirmier à Valence d'Albigeois !</h1>
+        <h1>Bienvenue dans notre cabinet infirmier de Valence d'Albigeois !</h1>
+          <p>
+            Nous sommes à votre écoute pour tous vos soins à domicile ou au cabinet, avec professionnalisme et bienveillance, 7J/7.
+          </p>
         <img src={cabinetImage} alt="Cabinet infirmier" style={{ maxWidth: '75%', borderRadius: '12px', marginTop: '1rem' }} />
-        <p>
-          Nous sommes à votre écoute pour tous vos soins à domicile, avec professionnalisme et bienveillance, 7J/7.
-        </p>
       </div>
     );
   }
