@@ -7,7 +7,7 @@ function Missions() {
           <p>Soins techniques, injections, perfusions, pansements, accompagnement dans vos soins d'hygiène ou suivi médicamenteux personnalisé : notre mission est de vous soigner avec humanité et respect de la dignité.</p>
       <img src={instrumentsImage} alt="Instruments" style={{ maxWidth: '50%', borderRadius: '6px', marginTop: '1rem' }} />
         <h2>Formation continue</h2>
-          <p>Dans une démarche d'accompagnement optimale dans les soins, notre équipe se forme régulièrement ou remet à jour ses connaisances en termes de bonnes pratiques.<br></br>
+          <p>Dans une démarche d'accompagnement optimale dans les soins, notre équipe se forme régulièrement ou remet à jour ses connaissances en termes de bonnes pratiques.<br></br>
             Nous avons donc effectué plusieurs formations :</p>
         <h3>- PRADO Cardio</h3>
           <p>Notre cabinet infirmier est formé au PRADO Cardio (Programme de Retour À Domicile – pathologies cardiovasculaires), un dispositif de l’Assurance Maladie qui permet d'assurer un suivi coordonné, humain et sécurisé après une hospitalisation pour un problème cardiaque (infarctus, insuffisance cardiaque, etc.).<br></br>
