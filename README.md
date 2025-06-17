@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Cabinet Infirmier Valence d'Albigeois
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue sur le **site officiel** du Cabinet Infirmier de Valence d'Albigeois (81), développé par **Hello_Dev0ps**.
 
-## Available Scripts
+Ce site présente les services proposés par notre équipe d'infirmiers libéraux, les missions du cabinet, ainsi que des outils pratiques pour nos patients et partenaires.
 
-In the project directory, you can run:
+## Stack Technique
 
-### `npm start`
+- **Frontend** : React (Create React App)
+- **Routing** : React Router DOM
+- **Design** : CSS Modules / Google Fonts (Poppins)
+- **Hébergement** : Vercel
+- **SEO** : Balises meta + Open Graph + sitemap.xml
+- **Analytics** : Google Analytics v4
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Pages disponibles
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `/` : Page d’accueil
+- `/equipe` : Présentation de l’équipe
+- `/missions` : Nos missions
+- `/contact` : Coordonnées + Carte Google Maps intégrée
+- `/liensutiles` : Liens médicaux utiles (Ameli, HAS, ICOPE…)
+- `/mentions-legales` : Mentions légales et RGPD
 
-### `npm test`
+## RGPD Friendly
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Aucune donnée personnelle n’est collectée sans consentement.
+Les cookies ne sont utilisés que pour des fins statistiques (Google Analytics).
+Consentement utilisateur géré via une bannière dédiée.
 
-### `npm run build`
+## SEO & Accessibilité
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Titre personnalisé de l’onglet
+- Description claire pour Google
+- Favicon custom
+- Structure balisée correctement
+- Open Graph pour les partages réseaux
+- Sitemap et JSON-LD pour les moteurs de recherche
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Bonus
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Widget météo local à Valence d’Albigeois
+- QR Code pour laisser un avis Google (à venir)
+- Responsive Design mobile-friendly
+- Footer signature : “Site créé par Hello_Dev0ps”
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
