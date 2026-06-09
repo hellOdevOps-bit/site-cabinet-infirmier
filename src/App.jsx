@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const trackClick = (event) => {
       const href = event.target.href;
-      if (href && (href.startsWith("mailto:") || href.startsWith("tel:") || href.includes("google.com/maps"))) {
+      if (href && (href.startsWith('mailto:') || href.startsWith('tel:') || href.includes('google.com/maps'))) {
         window.gtag('event', 'click', {
           event_category: 'Contact',
           event_label: href,
@@ -27,18 +27,20 @@ function App() {
 
   return (
     <Router>
-      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/equipe" element={<Equipe />} />
-        <Route path="/missions" element={<Missions />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/liensutiles" element={<LiensUtiles />} />
-        <Route path="/mentions-legales" element={<MentionsLegales />} />
-      </Routes>
-      <Footer />
-    </div>
+      <div className="app-shell">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Accueil />} />
+            <Route path="/equipe" element={<Equipe />} />
+            <Route path="/missions" element={<Missions />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/liensutiles" element={<LiensUtiles />} />
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }

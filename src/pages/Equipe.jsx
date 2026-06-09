@@ -1,25 +1,28 @@
-import fondangleImage from '../assets/fondangle.png';
+const TEAM = [
+  { name: 'Marion HUMBLOT', role: 'Infirmière' },
+  { name: 'Julie ARGENCE', role: 'Infirmière' },
+  { name: 'Anthony EXARTIER', role: 'Infirmier' },
+  { name: 'Chloé PRAT', role: 'Infirmière' },
+  { name: 'David GUERY', role: 'Infirmier' },
+];
 
 function Equipe() {
-    return (
-      <div style={{
-        backgroundImage: `url(${fondangleImage})`,
-        backgroundSize: 'contain',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'top right',
-        minHeight: '100vh',
-        padding: '1rem',
-        color: 'rgba(54, 46, 46, 0.4)',
-        lineHeight: '1.6',
-        textShadow: '0px 0px 1px #000',
-      }}>
-        <h1>Notre Équipe</h1>
-        <p>
-          Découvrez les membres de notre cabinet : infirmiers diplômés, passionnés et toujours à vos côtés.<br></br>-HUMBLOT Marion<br></br>-ARGENCE Julie<br></br>-EXARTIER Anthony
-          <br></br>-PRAT Chloé<br></br>-GUERY David
-        </p>
+  return (
+    <div className="container">
+      <h1 className="page-title">Notre équipe</h1>
+      <p className="page-intro">
+        Cinq infirmiers diplômés d'État, passionnés et toujours à vos côtés.
+      </p>
+      <div className="card-grid">
+        {TEAM.map((member) => (
+          <div key={member.name} className="card">
+            <p className="card-title">{member.name}</p>
+            <p className="card-subtitle">{member.role}</p>
+          </div>
+        ))}
       </div>
-    );
-  }
-  
-  export default Equipe;
+    </div>
+  );
+}
+
+export default Equipe;

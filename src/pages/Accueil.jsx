@@ -1,17 +1,39 @@
 import cabinetImage from '../assets/cabinet.jpg';
-import MeteoWidget from '../components/MeteoWidget.jsx';
+import MeteoWidget from '../components/MeteoWidget';
+import Button from '../components/Button';
+import { PHONE, PHONE_DISPLAY, EMAIL } from '../constants/contact';
 
 function Accueil() {
-    return (
-      <div style={{ padding: '1rem' }}>
-        <MeteoWidget/>
-        <h1>Bienvenue dans notre cabinet infirmier de Valence d'Albigeois !</h1>
-          <p>
-            Nous sommes à votre écoute pour tous vos soins infirmiers à domicile ou au cabinet, avec professionnalisme et bienveillance, prise de rendez-vous 7J/7.
+  return (
+    <div className="container">
+      <div className="hero">
+        <div className="hero-content">
+          <h1>Bienvenue au cabinet infirmier de Valence d'Albigeois</h1>
+          <p className="page-intro">
+            Soins infirmiers à domicile ou au cabinet, avec professionnalisme et bienveillance.
+            Prise de rendez-vous 7j/7.
           </p>
-        <img src={cabinetImage} alt="Cabinet infirmier" style={{ maxWidth: '75%', borderRadius: '12px', marginTop: '1rem' }} />
+          <div className="btn-group">
+            <Button href={`tel:${PHONE}`} variant="primary">
+              Appeler — {PHONE_DISPLAY}
+            </Button>
+            <Button href={`mailto:${EMAIL}`} variant="secondary">
+              Envoyer un email
+            </Button>
+            <Button to="/contact" variant="secondary">
+              Voir l'adresse
+            </Button>
+          </div>
+        </div>
+        <div>
+          <img src={cabinetImage} alt="Cabinet infirmier de Valence d'Albigeois" className="hero-image" />
+          <div className="meteo-sidebar">
+            <MeteoWidget />
+          </div>
+        </div>
       </div>
-    );
-  }
-  
-  export default Accueil;
+    </div>
+  );
+}
+
+export default Accueil;
