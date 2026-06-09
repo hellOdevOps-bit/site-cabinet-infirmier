@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Button from './Button';
-import { PHONE, PHONE_DISPLAY } from '../constants/contact';
 
 const NAV_LINKS = [
   { to: '/', label: 'Accueil' },
@@ -40,10 +38,6 @@ function Header() {
           ))}
         </nav>
 
-        <Button href={`tel:${PHONE}`} variant="primary" size="sm" className="header-cta">
-          {PHONE_DISPLAY}
-        </Button>
-
         <button
           className="burger"
           onClick={() => setIsOpen(!isOpen)}
@@ -58,9 +52,6 @@ function Header() {
         {NAV_LINKS.map(({ to, label }) => (
           <NavLink key={to} to={to} label={label} onClick={closeMenu} />
         ))}
-        <Button href={`tel:${PHONE}`} variant="primary" onClick={closeMenu}>
-          Appeler — {PHONE_DISPLAY}
-        </Button>
       </nav>
     </header>
   );

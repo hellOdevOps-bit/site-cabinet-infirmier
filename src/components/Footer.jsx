@@ -1,12 +1,10 @@
 import { Link } from 'react-router-dom';
-import { PHONE, PHONE_DISPLAY, EMAIL, ADDRESS_SHORT } from '../constants/contact';
+import { EMAIL, ADDRESS_SHORT } from '../constants/contact';
 
 function Footer() {
   return (
     <footer className="footer">
       <p className="footer-contact">
-        <a href={`tel:${PHONE}`}>{PHONE_DISPLAY}</a>
-        {' · '}
         <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
         {' · '}
         {ADDRESS_SHORT}
